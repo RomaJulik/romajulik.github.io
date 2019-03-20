@@ -1,2 +1,2 @@
-# romajulik.github.io
-starter
+# Roma Julik
+Первые попытки что то содать
