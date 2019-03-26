@@ -1,0 +1,563 @@
+.vert-text {
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+
+    -ms-transform-origin: left top 0;
+    -moz-transform-origin: left top 0;
+    -webkit-transform-origin: left top 0;
+    transform-origin: left top 0;
+}
+
+*{
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+h2{
+    color: #FBFBFB;
+    
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px; 
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+p {
+    color: #9ca1ad;
+    font-size: 18px;
+}
+
+i {
+    display: inline;
+    font-size: 84px;
+}
+
+a {
+    text-decoration: none;
+    color: #FBFBFB;
+    font-size: 24px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #F96C26;
+}
+
+.selected {
+    color: #F96C26;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #FBFBFB;
+}
+
+.main {
+    background: url('/img/homebg.jpg') no-repeat center;
+    background-size: cover;
+    background-color: #091124; 
+    max-height: 100vh;
+}
+
+/* Menu */
+
+.header{
+    padding-top: 10px;
+    height: 125px;
+    text-align: center;
+    border-bottom: 2px solid #F96C26;
+}
+
+.logo {
+    padding-top: 10px;
+    height: 100px;
+    letter-spacing: 2px;
+}
+
+.logo a {
+    color: #FBFBFB;
+    font-weight: 600;
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.logo a:hover {
+    color: rgba(249, 108, 38, 0.85);
+    text-decoration: none;
+    text-shadow: 1px 1px 6px #F96C26;
+}
+
+.logo span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navi {
+    text-transform: uppercase;
+    height: 100%;
+    padding-top: 20px
+}
+
+nav ul{
+   list-style: none;
+    overflow: hidden;
+    color: #FBFBFB;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FBFBFB;
+    font-size: 17px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #F96C26;
+    text-shadow: 1px 1px 8px #F96C26;
+}
+
+/* Hero */
+
+.main-content {
+    margin-top: 200px;
+}
+
+.main__title {
+    height: 89%;
+    padding-right: 20px;
+    border-right: 1px solid #F96C26;
+}
+
+.main__title p {
+    text-align: center;
+    margin-top: 25px;
+}
+.main__title h1 {
+    margin-top: 25px;
+    font-size: 73px;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: 3px;
+}
+
+.main__title h1 span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main__scroll {
+    
+    text-decoration: none;
+    width: 440px;
+    margin-top: 480px;
+    padding: 0 70px;
+    text-align: center;
+}
+
+.main__scroll a {
+    color: #F96C26;
+    text-transform: uppercase;
+    font-size: 31px;
+    font-weight: 200;
+    transition: 0.3s;
+}
+
+.main__scroll a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 8px #F96C26;
+    transform-origin: right;
+}
+
+.main__scroll a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #F96C26;
+    transform: scaleX(0);
+    transition: 0.3s;
+    transform-origin: right;
+}
+
+.main__scroll a:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+/* service page */
+
+.services {
+    text-align: center;
+    padding-bottom: 50px;    
+    background-color: #091124;
+    box-shadow: 0px 17px 80px #091124;
+}
+.services__title {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.services__title h4 {
+    color: #F96C26; 
+}
+
+.services__title h4::before, 
+.services__title h4::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #FBFBFB;
+    top: 15px;
+}
+
+.services__title h4::before,
+.contact__title h4::before {
+    left: 100%;
+}
+
+.services__title h4::after,
+.contact__title h4::after {
+    right: 100%;
+}
+
+
+.cards {
+    margin-top: 50px;
+}
+
+.box-one {
+    background-color: #F96C26;
+    background-image: url(../img/car.png);
+    background-position: right;
+    background-size: 42% 100%;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    text-align: left;
+    padding: 5px 25px;
+}
+
+
+.box-one i {
+    color: #ffceb4;
+}
+
+.box-one p {
+    color: #FDD3B9;
+    width: 60%;
+}
+
+.box-one a {
+    display: block;
+    font-size: 54px;
+    transition: 0.3s;
+    width: 35%;
+}
+
+.box-one a:hover {
+    color: #091124;
+}
+
+.box-two {
+    background-color: #B4B8C1;
+    min-height: 400px;
+    text-align: center;
+    padding: 5px 25px;
+}
+
+
+.box-two i {
+    color: #5c616c;
+    margin-left: -15px;
+}
+
+.box-two p {
+    color: #444A5C;
+
+}
+
+.box-two a {
+    display: block;
+    font-size: 54px;
+    font-weight: 600;
+    transition: 0.3s;
+    width: 85%;
+    color: #141C2E;
+    margin-left: 25px;
+}
+
+.box-two a:hover {
+    color: #f96c26;
+}
+
+.stab {
+    margin-top: -30px;
+}
+
+.box-three {
+    min-height: 400px;
+    text-align: left;
+    padding: 5px 25px;
+    border: 2px solid #6C7280;
+}
+
+
+
+.box-three i {
+    color: #bac7e0;
+    margin-left: -15px;
+}
+
+.box-three p {
+    color: #FFFFDC;
+
+}
+
+.box-three a {
+    display: block;
+    font-size: 54px;
+    font-weight: 600;
+    transition: 0.3s;
+    width: 65%;
+    color: #FFFFFF;
+}
+
+.box-three a:hover {
+    color: #f96c26;
+}
+
+.box-four {
+    min-height: 400px;
+    background: #9198A5;
+    text-align: center;
+    padding: 5px 25px;
+}
+
+
+.box-four i {
+    color: #282b31;
+    margin-left: -15px;
+}
+
+.box-four p {
+    color: #445173;
+
+}
+
+.box-four a {
+    display: block;
+    font-size: 54px;
+    font-weight: 600;
+    transition: 0.3s;
+    color: #141C2E;
+}
+
+.box-four a:hover {
+    color: #FFFFFF;
+}
+
+.box-five {
+    margin-top: 30px;
+    background: #424959;
+    text-align: right;
+    padding: 5px 25px;
+}
+
+
+.box-five i {
+    color: #c1ccde;
+}
+
+.box-five p {
+    color: #FFFFFF;
+
+}
+
+.box-five a {
+    display: block;
+    font-size: 49px;
+    font-weight: 600;
+    transition: 0.3s;
+    color: #FFFFFF;
+}
+
+.box-five a:hover {
+    color: #141C2E;
+}
+
+/* Contact page */
+
+.contact__title{
+    margin: 30px 0;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.contact__title h4  {
+    color: #141C2E;
+    font-size: 30px;
+}
+
+.contact__title h4::before,
+.contact__title h4::after {
+    content: '';
+    position: absolute;
+    width: 530px;
+    height: 2px;
+    background: #f96c26;
+    top: 15px;
+}
+
+.contact {
+    padding: 50px 0;
+    background: #d9dadb;
+    text-align: center;
+}
+
+.slider {
+    background: #091124;
+    height: 700px;
+    overflow: hidden;
+}
+
+.slider a {
+    display: block;
+    font-size: 49px;
+    font-weight: 600;
+    transition: 0.3s;
+    color: #FFFFFF;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.slider a:hover {
+    color: #f96c26;
+}
+
+.slider i {
+    color: #c7cdd9;
+    padding-left: 30px;
+}
+
+.company {
+    background-color: #FF6C00;
+    background-image: url(../img/favicon.png);
+    background-position: right bottom;
+    background-size: 40% 50%;
+    background-repeat: no-repeat;
+    background-blend-mode:saturation ;
+    min-height: 300px;
+    text-align: left;
+    padding: 5px 25px;
+}
+
+.company i {
+    color: #FFB178;
+}
+
+.company a {
+    display: block;
+    font-size: 47px;
+    width: 40%;
+}
+
+.company a:hover {
+    color: #091124;
+}
+
+.company p {
+    color: #FFF5FF;
+}
+
+.telephone {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #141C2E;
+    padding: 10px 0;
+}
+
+.telephone a {
+    font-size: 32px;
+    font-weight: 600;
+    color: #141C2E;
+    padding-left: 5px;
+}
+
+.telephone i {
+    padding-top: 10px;
+    color: #141C2E;
+}
+
+.tel {
+    color: #FF6C00;
+    padding: 10px 15px;
+    border-right: 1px solid #FF6C00;
+}
+
+.telephone:hover {
+    background: #B4B8C1;
+}
+
+.social {
+    min-height: 80px;
+}
+
+.social a {
+    color: #141C2E;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social a:hover {
+    color: #FF6C00;
+}
+
+.sponsor {
+    height: 200px;
+    padding-top: 50px;
+    background: #d9dadb;
+}
+
+.brands {
+    background: #d9dadb;
+    height: 128px;
+    overflow: hidden;
+    border: none;
+}
+
+.footer-section {
+    display: block;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    background: #091124
+}
